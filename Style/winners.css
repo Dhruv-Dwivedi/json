@@ -3,6 +3,29 @@
     height: auto;
 }
 
+header nav .menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav .menu a{
+	color: rgb(3, 42, 114);
+    text-decoration: none;
+	padding: 7px 15px;
+	margin: 10px 10px;
+	font-size: 23px;
+	cursor: pointer;
+	transition: 2s ease;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+header nav .menu a:hover{
+	background: rgba(12, 37, 229, 0.951);
+	color: #fbf8f8; 
+	transition: .2s ease;
+    border-radius: 25px;
+}
+
 .table-header {
     border: 1px solid black;
     color: rgb(30, 112, 227);
@@ -49,13 +72,9 @@ input {
 }
 
 .container .year-drop {
-    padding-left: 710px;
-    align-items: end;
+    padding-left: 650px;
 }
 
-.container .category-drop {
-    padding-left: 20px;
-}
 
 button {
     font-size: inherit;

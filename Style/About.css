@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+.container header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 120px;
+}
+.container header nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  padding: 2px;
+}
+.container header nav .menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container header nav .menu ul{
+	list-style-type: none;
+	display: flex;
+}
+.container header nav .menu ul li a{
+	color: rgb(3, 42, 114);
+	padding: 16px 26px;
+	margin: 10px 10px;
+	font-size: 23px;
+	cursor: pointer;
+	transition: 2s ease;
+}
+.container header nav .menu ul li a:hover{
+	background: rgba(255, 255, 255, 0.951);
+	color: #000; 
+	transition: .2s ease;
+    border-radius: 35px;
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    width: 55%;
+    float: left;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content section.tittle{
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #88941e;
+
+}
+.content section.content h4{
+    margin-top: 20x;
+}
+.content section.content h3{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 1px;
+    line-height: 1.5;
+}
+.content section.content h3 .anch{
+    text-decoration: none;
+}
+.content-section .content .button{
+    margin-top: 30px;
+    
+
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    border-radius: 100px;
+}  
+.content-section .content .button a:hover{
+  background-color: #a52a2a;
+  color: #fff;
+}
+@media screen and (max-width:768px) {
+.container{
+  width: 80%;
+     display: block;
+     margin: auto;
+     padding-top: 50px;
+    }
+    .content--section{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }   
+    .image-section{
+      float: none;
+      width: 100%;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .tittle{
+
+       text-align: center;
+       font-size: 19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+    } 
+    .content-section .content .button a{
+        padding: 9px 30px;
+    }
+}

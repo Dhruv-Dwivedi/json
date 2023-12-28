@@ -69,10 +69,11 @@ input {
     padding-right: 50px;
     border-radius: 10px;
     padding-bottom: 5px;
+    margin-right: 20px;
 }
 
-.container .year-drop {
-    padding-left: 650px;
+.container .dropdown {
+    margin-right: 20px;
 }
 
 

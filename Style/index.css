@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+	width: 100%;
+	height: 100vh;
+}
+.main-container header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 50px;
+}
+.main-container header nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  padding: 2px;
+}
+.main-container header nav .menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-container header nav .menu ul{
+	list-style-type: none;
+	display: flex;
+}
+.main-container header nav .menu ul li a{
+	color: rgb(3, 42, 114);
+	padding: 16px 26px;
+	margin: 0 10px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 2s ease;
+}
+.main-container header nav .menu ul li a:hover{
+	background: rgba(255, 255, 255, 0.951);
+	color: #000; 
+	transition: .2s ease;
+  border-radius: 25px;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.container section{
+	width: 100%;
+	height: 60vh;
+	padding: 50px 200px;
+	justify-content: space-between;
+	align-items: center;
+	background: url('https://i.pinimg.com/originals/47/5b/59/475b59c61a6efb3ec8ac0a57e43fd03b.webp');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container section .left{
+	display: flex;
+	flex-direction: column;
+}
+.container section .left .content{
+	display: flex;
+	flex-direction: column;
+}
+.container section .left .content h1{
+	font-size: 60px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+  padding-left: 350px ;
+  padding-bottom: 120px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #19e634 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+}
+p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.icon-wrapper {
+    background-color: #19e634;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.card:hover {
+    background-position: 0 100%;
+  }
+.card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #19e634;
+  }
+.card:hover h3 {
+    color: #ffffff;
+  }
+.card:hover p {
+    color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+}
